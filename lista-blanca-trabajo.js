@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.3
+// @version      1.1.4
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -16,8 +16,6 @@
 
     // Define aquí las expresiones regulares de las páginas que quieres bloquear
     const paginasPermitidas = [
-        /reddit\.com\/r\/n8n/i,
-        /reddit\.com\/r\/actualbudgeting/i,
         /local.*\.test/i,
         /regexr.com/i,
         /google.com/i,
