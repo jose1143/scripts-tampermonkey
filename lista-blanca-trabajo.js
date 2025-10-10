@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.1.1
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -40,7 +40,8 @@
         /trello.services/i,
         /app.amazingpowerups.com/i,
         /extremadurarural.es/i,
-        /wordpress.org/i
+        /wordpress.org/i,
+        /screenful.me/i
     ];
 
     // Mensaje personalizado que se mostrará
