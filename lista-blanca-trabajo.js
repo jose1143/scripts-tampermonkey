@@ -1,0 +1,98 @@
+// ==UserScript==
+// @name         Bloqueador de Páginas Lista blanca
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Bloquea el acceso a páginas específicas usando expresiones regulares
+// @author       Tu nombre
+// @match        *://*/*
+// @grant        none
+// @run-at       document-start
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    // Define aquí las expresiones regulares de las páginas que quieres bloquear
+    const paginasPermitidas = [
+        /reddit\.com\/r\/n8n/i,
+        /reddit\.com\/r\/actualbudgeting/i,
+        /local.*\.test/i,
+        /regexr.com/i,
+        /google.com/i,
+        /localhost/i,
+        /bittacora/i,
+        /192.168.0.219/i,
+        /gestiondecorreo.com/i,
+        /sentry.io/i,
+        /gitlab.com/i,
+        /github.com/i,
+        /laravel.com/i,
+        /php.net/i,
+        /stackoverflow.com/i,
+        /chatgpt.com/i,
+        /claude.ai/i,
+        /clockodilo.com/i,
+        /trello.com/i,
+        /bing.com/i,
+        /asoftmurmur.com/i,
+        /trello.services/i,
+        /app.amazingpowerups.com/i,
+        /extremadurarural.es/i,
+        /wordpress.org/i
+    ];
+
+    // Mensaje personalizado que se mostrará
+    const mensajeBloqueo = `
+        <!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>404</title>
+    <style>
+      body {
+        background: #f5f5f5;
+        color: #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        margin: 0;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .code {
+          font-size: 6rem;
+          padding-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1><div class="code">404</div>Page not found</h1>
+    </main>
+  </body>
+</html>
+    `;
+
+    // Comprobar si la URL actual coincide con alguna expresión regular
+    const urlActual = window.location.href;
+
+    let block = true;
+    for (let patron of paginasPermitidas) {
+        if (patron.test(urlActual)) {
+            block = false;
+            break;
+        }
+    }
+
+    if (block) {
+        console.error(urlActual + ' bloqueada');
+        // Bloquear la página
+        document.open();
+        document.write(mensajeBloqueo);
+        document.close();
+
+        // Detener la carga de scripts adicionales
+        window.stop();
+    }
+})();
