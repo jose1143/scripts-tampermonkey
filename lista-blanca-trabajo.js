@@ -42,7 +42,8 @@
         /extremadurarural.es/i,
         /wordpress.org/i,
         /screenful.me/i,
-        /cloudflare.com/i
+        /cloudflare.com/i,
+        /jetbrains.com/i
     ];
 
     // Mensaje personalizado que se mostrará
