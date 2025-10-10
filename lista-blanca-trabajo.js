@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.4
+// @version      1.1.5
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -41,7 +41,8 @@
         /wordpress.org/i,
         /screenful.me/i,
         /cloudflare.com/i,
-        /jetbrains.com/i
+        /jetbrains.com/i,
+        /lipsum.com/i
     ];
 
     // Mensaje personalizado que se mostrará
