@@ -7,6 +7,8 @@
 // @match        *://*/*
 // @grant        none
 // @run-at       document-start
+// @downloadURL  https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-trabajo.js
+// @updateURL    https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-trabajo.js
 // ==/UserScript==
 
 (function() {
