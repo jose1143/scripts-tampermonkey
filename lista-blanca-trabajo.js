@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.23
+// @version      1.1.24
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -17,37 +17,37 @@
     // Define aquí las expresiones regulares de las páginas que quieres bloquear
     const paginasPermitidas = [
         /local.*\.test/i,
-        /regexr.com/i,
-        /google.com/i,
+        /regexr\.com/i,
+        /google\.com/i,
         /localhost/i,
         /bittacora/i,
-        /192.168.0.219/i,
-        /gestiondecorreo.com/i,
-        /sentry.io/i,
-        /gitlab.com/i,
-        /github.com/i,
-        /laravel.com/i,
-        /php.net/i,
-        /stackoverflow.com/i,
-        /chatgpt.com/i,
-        /claude.ai/i,
-        /clockodilo.com/i,
-        /trello.com/i,
-        /bing.com/i,
-        /asoftmurmur.com/i,
-        /trello.services/i,
-        /app.amazingpowerups.com/i,
-        /extremadurarural.es/i,
-        /wordpress.org/i,
-        /screenful.me/i,
-        /cloudflare.com/i,
-        /jetbrains.com/i,
-        /lipsum.com/i,
-        /elementor.com/i,
-        /deepl.com/i,
+        /192\.168\.0\.219/i,
+        /gestiondecorreo\.com/i,
+        /sentry\.io/i,
+        /gitlab\.com/i,
+        /github\.com/i,
+        /laravel\.com/i,
+        /php\.net/i,
+        /stackoverflow\.com/i,
+        /chatgpt\.com/i,
+        /claude\.ai/i,
+        /clockodilo\.com/i,
+        /trello\.com/i,
+        /bing\.com/i,
+        /asoftmurmur\.com/i,
+        /trello\.services/i,
+        /app\.amazingpowerups\.com/i,
+        /extremadurarural\.es/i,
+        /wordpress\.org/i,
+        /screenful\.me/i,
+        /cloudflare\.com/i,
+        /jetbrains\.com/i,
+        /lipsum\.com/i,
+        /elementor\.com/i,
+        /deepl\.com/i,
         /phpstan\.org/i,
         /ionos/i,
-        /dip-badajoz.es/i,
+        /dip-badajoz\.es/i,
         /bitwarden\.com/i,
         /stratoserver\.net/i,
         /nativepowerups\.com/i,
@@ -58,7 +58,8 @@
         /simexcloud\.com/i,
         /laracasts\.com/i,
         /redaedem\.org/i,
-        /misterlures.com/i
+        /misterlures\.com/i,
+        /prestashop\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
