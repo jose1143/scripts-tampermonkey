@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.11
+// @version      1.1.12
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -46,7 +46,8 @@
         /elementor.com/i,
         /deepl.com/i,
         /phpstan\.org/i,
-        /ionos/i
+        /ionos/i,
+        /dip-badajoz.es/i
     ];
 
     // Mensaje personalizado que se mostrará
