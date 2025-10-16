@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.33
+// @version      1.1.34
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -68,7 +68,8 @@
         /crontab\.guru/i,
         /stackexchange/i,
         /arsys\.es/i,
-        /plesk\.com/i
+        /plesk\.com/i,
+        /cualesmiip\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
