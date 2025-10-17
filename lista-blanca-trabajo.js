@@ -71,7 +71,8 @@
         /plesk\.com/i,
         /cualesmiip\.com/i,
         /visualstudio\.com/i,
-        /redhat\.com/i
+        /redhat\.com/i,
+        /ubuntu\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
