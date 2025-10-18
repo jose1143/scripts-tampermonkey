@@ -7,8 +7,8 @@
 // @match        *://*/*
 // @grant        none
 // @run-at       document-start
-// @downloadURL  https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-trabajo.js
-// @updateURL    https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-trabajo.js
+// @downloadURL  https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-personal.js
+// @updateURL    https://raw.githubusercontent.com/jose1143/scripts-tampermonkey/refs/heads/main/lista-blanca-personal.js
 // ==/UserScript==
 
 (function() {
@@ -17,15 +17,6 @@
     // Define aquí las expresiones regulares de las páginas que quieres bloquear
     const paginasPermitidas = [
         /google.com/i,
-        /gitlab.com/i,
-        /github.com/i,
-        /laravel.com/i,
-        /php.net/i,
-        /stackoverflow.com/i,
-        /chatgpt.com/i,
-        /claude.ai/i,
-        /cloudflare.com/i,
-        /jetbrains.com/i
     ];
 
     // Mensaje personalizado que se mostrará
