@@ -74,7 +74,8 @@
         /redhat\.com/i,
         /ubuntu\.com/i,
         /docker\.com/i,
-        /kopia\.io/i
+        /kopia\.io/i,
+        /cleancoder\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
