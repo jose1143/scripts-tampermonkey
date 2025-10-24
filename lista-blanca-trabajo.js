@@ -88,7 +88,8 @@
         /laravel-news\.com/i,
         /photopea\.com/i,
         /googleusercontent.com/i,
-        /playwright\.dev/i
+        /playwright\.dev/i,
+        /symfony\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
