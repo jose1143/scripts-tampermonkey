@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Bloqueador de Páginas Lista blanca
 // @namespace    http://tampermonkey.net/
-// @version      1.1.54
+// @version      1.1.55
 // @description  Bloquea el acceso a páginas específicas usando expresiones regulares
 // @author       Tu nombre
 // @match        *://*/*
@@ -91,7 +91,8 @@
         /playwright\.dev/i,
         /symfony\.com/i,
         /packagist.org/i,
-        /file:\/\/\//i
+        /file:\/\/\//i,
+        /laraveldaily\.com/i
     ];
 
     // Mensaje personalizado que se mostrará
